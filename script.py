@@ -29,9 +29,10 @@ def main():
   with open(output_path, 'w+') as file_handler:
     ip_address = _get_ip_address()
     total_word_count = 0
+    file_handler.write(f'\nSIMPLE DOCKER APP OUTPUT\n\n')
     
     file_names = ', '.join([value.get('name') for value in file_info.values()])
-    file_handler.write(f'\nFile names: {file_names}\n\n')
+    file_handler.write(f'File names: {file_names}\n\n')
 
     for info in file_info.values():
       word_count = info.get('total_count')
