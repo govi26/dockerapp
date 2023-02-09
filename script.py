@@ -31,7 +31,7 @@ def main():
     total_word_count = 0
     
     file_names = ', '.join([value.get('name') for value in file_info.values()])
-    file_handler.write(f'\nFiles: {file_names}\n\n')
+    file_handler.write(f'\nFile names: {file_names}\n\n')
 
     for info in file_info.values():
       word_count = info.get('total_count')
